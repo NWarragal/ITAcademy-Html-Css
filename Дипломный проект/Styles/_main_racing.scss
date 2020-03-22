@@ -1,0 +1,121 @@
+@keyframes main_list_element_hover {
+    from {transform: scale(1, 1);}
+    50%{transform: scale(1.05, 1.05);}
+    to {transform: scale(1.1, 1.1);}
+}
+
+main{
+    background-color: #f6f2f2;
+}
+
+.main_list{
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 108px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main_header{
+    opacity: 0.8;
+    color: #000000;
+    font-family: "Open Sans";
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.38px;
+    margin-top: 108px;
+    margin-bottom: 108px;
+    position: relative;
+}
+
+.main_list_element{
+    width: 30%;
+    margin: 40px 0;
+    background-color: #ffffff;
+    box-shadow: 0 0 30px rgba(0,0,0,1);
+}
+
+.image{
+    width: 90%;
+    font-size: 16px;
+}
+
+.main_list_element_description{
+    opacity: 0.7;
+    color: #000000;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.22px;
+}
+
+.img_car{
+    width: 300px;
+    position: absolute;
+    top: 66px;
+    right: 0;
+    margin-right: 25px;
+}
+
+.main_list_element:hover{
+    animation: main_list_element_hover 0.15s;
+    animation-fill-mode: forwards;
+    transition-timing-function: linear;
+}
+
+.image:hover{
+    cursor: pointer;
+}
+
+@media (max-width: 1225px){
+    .img_car{
+        top: 108px;
+    }
+}
+
+@media (max-width: 1121px){
+    .main_header{
+        padding-left: 30px;
+    }
+
+    .main_list{
+        justify-content: space-around;
+    }
+
+    .main_list_element:last-child{
+        margin-right: 50%;
+    }
+}
+
+@media (max-width: 1072px){
+    .main_list_element{
+        width: 40%;
+    }
+
+    .img_car{
+        display: none;
+    }
+}
+
+@media (max-width: 767px){
+    .main_list_element:last-child{
+        margin-right: 0;
+        width: 80%;
+    }
+
+    .main_list_element{
+        width: 80%;
+    }
+
+    .main_header{
+        margin-bottom: -10px;
+        font-size: 36px;
+
+        hr{
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.flex{
+    justify-content: center;
+}
+
+.header_history{
+    color: #000000;
+    font-family: "Open Sans";
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 160px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    width: 80%;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.history{
+    background-color: #ffffff;
+    opacity: 0.8;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+@media (max-width: 767px){
+    .header_history{
+        font-size: 50px;
+        line-height: 100px;
+    }
+}

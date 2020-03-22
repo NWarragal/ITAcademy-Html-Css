@@ -1,0 +1,23 @@
+.flex{
+    justify-content: center;
+}
+
+.header_about{
+    color: #000000;
+    font-family: "Open Sans";
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 120px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    width: 80%;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.about{
+    background-color: #ffffff;
+    opacity: 0.8;
+    border-radius: 10px;
+    padding: 20px;
+}

@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    font-size: 0;
+}
+
+.main{
+    width: 700px;
+    height: 700px;
+    padding: 50px;
+    background-color: greenyellow;
+}
+
+div div{
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+}
+
+div div:nth-child(n){
+    background-color: white;
+}
+
+div div:nth-child(16n+1){
+    background-color: black;
+}
+
+div div:nth-child(16n+3){
+    background-color: black;
+}
+
+div div:nth-child(16n+5){
+    background-color: black;
+}
+
+div div:nth-child(16n+7){
+    background-color: black;
+}
+
+div div:nth-last-child(16n+1){
+    background-color: black;
+}
+
+div div:nth-last-child(16n+3){
+    background-color: black;
+}
+
+div div:nth-last-child(16n+5){
+    background-color: black;
+}
+
+div div:nth-last-child(16n+7){
+    background-color: black;
+}

@@ -1,0 +1,99 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    @include fsize(16px);
+}
+
+a{
+    text-decoration: none;
+    @include color(#b9b9b9)
+}
+
+.content{
+    max-width: 920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.header__content{
+    @include flex();
+    @include justify_centr(space-between);
+}
+
+.header__contacts{
+    @include flex();
+    @include fsize(14px);
+}
+
+.header__contacts-link-wrapper{
+    @include padding();
+}
+
+.header__contacts-link-wrapper + .header__contacts-link-wrapper{
+    border-left: 1px solid #aaaaaa;
+}
+
+
+.header__login{
+    text-transform: uppercase;
+    @include flex();
+    @include fsize(14px);
+}
+
+.header__login-link-wrapper{
+    @include padding();
+}
+
+.header__login-link-wrapper + .header__login-link-wrapper{
+    border-left: 1px solid $border_color;
+}
+
+.header__top{
+    @include padding(10px, 0);
+    background-color: #382b2b;
+}
+
+.header__nav{
+    border-bottom: 1px solid $border_sec;
+}
+
+.header__nav-list{
+    @include flex();
+    @include justify_centr();
+}
+
+.header__nav-list-item{
+    @include padding(10px, 10px);
+}
+
+.header__nav-list-item {
+    a:hover{
+        text-decoration: underline;
+        @include color(green);
+    }
+}
+
+.top-banner{
+    @include padding(5%, 5%);
+    background: $border_sec url("../images/01.png") center no-repeat;
+}
+
+.top-banner__title{
+    @include fsize(54px);
+    @include color($main_text_color);
+    text-align: center;
+}
+
+.top-banner__clarify{
+    margin-top: 25px;
+    line-height: 1.2;
+    @include fsize(16px);
+    @include color($main_text_color);
+}

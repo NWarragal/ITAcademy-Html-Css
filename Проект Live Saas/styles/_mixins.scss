@@ -1,0 +1,21 @@
+@import '_styles.scss';
+
+@mixin flex{
+    display: flex;
+}
+
+@mixin justify_centr($smth: center){
+    justify-content: $smth; 
+}
+
+@mixin padding($top: 0, $corners: 20px){
+    padding: $top $corners;
+}
+
+@mixin fsize($size){
+    font-size: $size;
+}
+
+@mixin color($color){
+    color: $color;
+}

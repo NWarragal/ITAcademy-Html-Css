@@ -1,0 +1,109 @@
+@keyframes shadow {
+    from {background-color: orangered;}
+    50%{background-color: rgb(252, 110, 59);}
+    to {background-color: rgb(252, 125, 79);}
+}
+
+.button{
+    background: none;
+    width: 200px;
+    height: 50px;
+    background-color: orangered;
+    border: 0;
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    border-radius: 5px;
+}
+
+.wrapper{
+    display: inline-block;
+    margin: 30px;
+    vertical-align: top;
+}
+
+.button:hover{
+    animation: shadow 0.15s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+.basic{
+    width: 260px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.usual{
+    padding: 15px;
+}
+
+.parent{
+    position: relative;
+}
+
+.button1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -75px;
+    margin-top: -20px;
+    background: none;
+    width: 150px;
+    height: 40px;
+    line-height: 10px;
+    background-color: orangered;
+    border: 0;
+    font-size: 14px;
+    font-weight: 800;
+    color: white;
+    border-radius: 5px;
+    transform: scale(0);
+}
+
+.basic:hover div button:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.basic:hover div button{
+    transform: scale(1);
+    transition: .15s;
+}
+
+.test{
+    position: relative;
+}
+
+.text{
+    position: absolute;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.movable{
+    font-weight: 600;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    transform: translateY(25px);
+    transition: .25s;
+    background-color: white;
+}
+
+.test:focus-within{
+    .movable{
+        transform: translateY(-12px);
+        transition: 0.25s;
+    }
+}
+
+input:valid + span{
+    transform: translateY(-12px);
+    transition: 0.25s;
+}

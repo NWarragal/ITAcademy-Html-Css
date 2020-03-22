@@ -1,0 +1,177 @@
+*{
+    box-sizing: border-box;
+}
+
+.main{
+    margin-top: 30px;
+    width: 900px;
+    height: 16px;
+}
+
+.main1{
+    position: relative;
+    width: 900px;
+    height: 16px;
+    font-size: 0;
+}
+
+.main2{
+    width: 900px;
+    margin: 10px 0;
+    margin-top: 30px;
+    height: 16px;
+}
+
+.main3{
+    width: 900px;
+    margin: 10px 0;
+    margin-top: -10px;
+    height: 16px;
+}
+
+.div1{
+    border-right: 2px solid red;
+    display: inline-block;
+    padding: 0 10px;
+    width: 150px;
+    text-align: center;
+}
+
+.div2{
+    display: inline-block;
+    padding: 0 10px;
+    width: 150px;
+    text-align: center;
+}
+
+a{
+    color: green;
+}
+
+a:hover{
+    color: red;
+}
+
+.line{
+    padding: 0 10px;
+    width: 150px;
+    border-right: 2px solid red;
+    text-align: center;
+}
+
+.line:nth-child(5){
+    border-right: white;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.more{
+    float: left;
+    padding-right: 26px;
+    padding-left: 26px;
+    border-right: 2px solid red;
+}
+
+.more1{
+    float: left;
+    padding-left: 10px;
+    padding-right: 26px;
+    border-right: 2px solid red;
+}
+
+.more2{
+    float: left;
+    padding-left: 26px;
+    padding-right: 26px;
+}
+
+.dir1{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 150px;
+    text-align: center;
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+.dir2{
+    position: absolute;
+    top: 50%;
+    left: 150px;
+    width: 150px;
+    text-align: center;
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+.dir3{
+    position: absolute;
+    top: 50%;
+    left: 300px;
+    width: 150px;
+    text-align: center;
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+.dir4{
+    position: absolute;
+    top: 50%;
+    left: 450px;
+    width: 150px;
+    text-align: center;
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+.dir5{
+    position: absolute;
+    top: 50%;
+    left: 600px;
+    width: 150px;
+    text-align: center;
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+.dir{
+    border-right: 2px solid red;
+}
+
+.line1{
+    height: 16px;
+    width: 2px;
+    color: red;
+    margin-top: -16px;
+    margin-left: 150px;
+}
+
+.line2{
+    height: 16px;
+    width: 2px;
+    color: red;
+    margin-top: -16px;
+    margin-left: 150px;
+}
+
+.line3{
+    height: 16px;
+    width: 2px;
+    color: red;
+    margin-top: -16px;
+    margin-left: 150px;
+}
+
+.line4{
+    height: 16px;
+    width: 2px;
+    color: red;
+    margin-top: -16px;
+    margin-left: 150px;
+}

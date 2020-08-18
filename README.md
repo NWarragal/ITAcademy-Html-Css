@@ -6,8 +6,6 @@
 #### [Ссылка на проект](https://github.com/NWarragal/ITAcademy-Html-Css/tree/master/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20Saturn)
 Макет лицевой страницы сайта такси "Сатурн"
 
-Начальная страница:
-
 ![saturn](https://github.com/NWarragal/ITAcademy-Html-Css/blob/master/Images/Saturn.png)
 
 
